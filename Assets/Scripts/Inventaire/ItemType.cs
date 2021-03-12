@@ -11,14 +11,13 @@ public class ItemType : ScriptableObject
     public int id;
     public int categorie;
     public string nom, description, nomcategorie;
-    public Sprite image;
+    public Sprite ItemTypeSprite;
 
-    public ItemType(int _id, int _categorie, string _nom, string _description, Sprite _image)
+    public ItemType(int _id, int _categorie, string _nom, string _description)
     {
         this.id = _id;
         this.nom = _nom;
         this.description = _description;
-        this.image = _image;
         switch(categorie)
         {
             case 0:
@@ -34,5 +33,5 @@ public class ItemType : ScriptableObject
     public string Nom { get => nom; set => nom = value; }
     public string Description { get => description; set => description = value; }
     public string Nomcategorie { get => nomcategorie; set => nomcategorie = value; }
-    public Sprite Image { get => image; set => image = value; }
+    //public Sprite Image { get => image; set => image = value; }
 }

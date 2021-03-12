@@ -6,8 +6,9 @@ using UnityEngine;
 public class Item : ScriptableObject
 {
     private int id;
-    private ItemType type;
-    private int count;
+    public ItemType type;
+    public int count;
+    public int indexplaceinventaire;
     private double prixachat = 0.0f;
 
     public Item(int _id, ItemType _type, int _count = 1, double _prixachat = 0.0f)
@@ -16,6 +17,13 @@ public class Item : ScriptableObject
         this.Type = _type;
         this.Count = _count;
         this.Prixachat = _prixachat;
+        this.indexplaceinventaire = -1;
+
+    }
+
+    public Sprite ObtenirSprite()
+    {
+        return this.type.ItemTypeSprite;
     }
 
     public int Id { get => id; set => id = value; }

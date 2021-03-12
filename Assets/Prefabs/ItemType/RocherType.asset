@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d80c78998c18e24993ad336877c2037, type: 3}
-  m_Name: Rock
+  m_Name: RocherType
   m_EditorClassIdentifier: 
   id: 0
   categorie: 0
-  nom: Caillou
-  description: "une roche sans inter\xEAt"
-  nomcategorie: 
-  image: {fileID: 21300000, guid: f6f051dac88f64d738e91b4f27aaaacd, type: 3}
+  nom: Rocher
+  description: Une roche
+  nomcategorie: Divers
+  ItemTypeSprite: {fileID: 21300000, guid: d4fd9a785b43f4479a077f9adbaf5a47, type: 3}
